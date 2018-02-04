@@ -1,18 +1,19 @@
 package model;
 
-import model.card.Card;
+import model.card.TreasureCard;
+import model.card.VictoryCard;
 import model.deck.DeckGenerator;
 
 import java.util.Set;
 
 public class Game {
 
-	private Set<Card> copperCards;
-	private Set<Card> silverCards;
-	private Set<Card> goldCards;
-	private Set<Card> domainCards;
-	private Set<Card> duchyCards;
-	private Set<Card> provinceCards;
+	private Set<TreasureCard> copperCards;
+	private Set<TreasureCard> silverCards;
+	private Set<TreasureCard> goldCards;
+	private Set<VictoryCard> domainCards;
+	private Set<VictoryCard> duchyCards;
+	private Set<VictoryCard> provinceCards;
 	private KingdomCardManager kingdomCardManager;
 
 	public Game() {

@@ -26,7 +26,7 @@ public class DeckGeneratorTest {
 	@Test
 	public void generateRealmCardsTest() {
 		assertEquals(DeckGenerator.NB_REALM_CARDS,
-				DeckGenerator.generateRealmCard(KingdomValue.WOODCUTTER).size());
+				DeckGenerator.generateKingdomCard(KingdomValue.WOODCUTTER).size());
 	}
 
 	@Test

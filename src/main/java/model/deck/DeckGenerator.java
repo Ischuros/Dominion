@@ -25,86 +25,80 @@ public class DeckGenerator {
 
 	}
 
-	public static List<Card> generateBlankCards() {
-		List<Card> cards = new ArrayList<>();
-
+	public static Set<BlankCard> generateBlankCards() {
+		Set<BlankCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_BLANK_CARDS; i++) {
 			cards.add(new BlankCard());
 		}
-
 		return cards;
 	}
 
-	public static List<Card> generatePreparationCards() {
-		List<Card> cards = new ArrayList<>();
-
+	public static Set<PreparationCard> generatePreparationCards() {
+		Set<PreparationCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_PREPARATION_CARDS; i++) {
 			cards.add(new PreparationCard());
 		}
-
 		return cards;
 	}
 
-	public static List<Card> generateCurseCards() {
-		List<Card> cards = new ArrayList<>();
-
+	public static Set<CurseCard> generateCurseCards() {
+		Set<CurseCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_CURSE_CARDS; i++) {
 			cards.add(new CurseCard());
 		}
-
 		return cards;
 	}
 
-	public static Set<Card> generateRealmCard(KingdomValue value) {
-		Set<Card> cards = new HashSet<>();
+	public static Set<KingdomCard> generateKingdomCard(KingdomValue value) {
+		Set<KingdomCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_REALM_CARDS; i++) {
 			cards.add(new KingdomCard(value));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateProvinceCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<VictoryCard> generateProvinceCards() {
+		Set<VictoryCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_PROVINCE_CARDS; i++) {
 			cards.add(new VictoryCard(VictoryValue.PROVINCE));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateDuchyCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<VictoryCard> generateDuchyCards() {
+		Set<VictoryCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_DUCHY_CARDS; i++) {
 			cards.add(new VictoryCard(VictoryValue.DUCHY));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateDomainCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<VictoryCard> generateDomainCards() {
+		Set<VictoryCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_DOMAIN_CARDS; i++) {
 			cards.add(new VictoryCard(VictoryValue.DOMAIN));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateGoldCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<TreasureCard> generateGoldCards() {
+		Set<TreasureCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_GOLD_CARDS; i++) {
 			cards.add(new TreasureCard(TreasureValue.GOLD));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateSilverCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<TreasureCard> generateSilverCards() {
+		Set<TreasureCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_SILVER_CARDS; i++) {
 			cards.add(new TreasureCard(TreasureValue.SILVER));
 		}
 		return cards;
 	}
 
-	public static Set<Card> generateCopperCards() {
-		Set<Card> cards = new HashSet<>();
+	public static Set<TreasureCard> generateCopperCards() {
+		Set<TreasureCard> cards = new HashSet<>();
 		for (int i = 0; i < NB_COPPER_CARDS; i++) {
 			cards.add(new TreasureCard(TreasureValue.COPPER));
 		}
