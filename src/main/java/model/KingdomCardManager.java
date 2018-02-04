@@ -10,11 +10,15 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class KingdomCardManager {
 
-	public static final int NB_KINGDOM_CARDS = 10;
+	private static final int NB_KINGDOM_CARDS = 10;
 
 	private Set<Set<KingdomCard>> cards;
 
-	private void init() {
+	public KingdomCardManager() {
+		generateCards();
+	}
+
+	private void generateCards() {
 		int max = KingdomValue.values().length;
 		Set<Integer> values = new HashSet<>();
 
@@ -27,5 +31,9 @@ public class KingdomCardManager {
 
 		this.cards = new HashSet<>();
 		values.forEach(i -> cards.add(DeckGenerator.generateKingdomCard(KingdomValue.values()[i])));
+	}
+
+	Set<Set<KingdomCard>> getAllCards() {
+		return cards;
 	}
 }

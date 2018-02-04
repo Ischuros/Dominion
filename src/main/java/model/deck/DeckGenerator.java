@@ -16,7 +16,7 @@ public class DeckGenerator {
 	static final int NB_DOMAIN_CARDS = 24;
 	static final int NB_DUCHY_CARDS = 12;
 	static final int NB_PROVINCE_CARDS = 12;
-	static final int NB_REALM_CARDS = 10;
+	public static final int NB_REALM_CARDS = 10;
 	static final int NB_CURSE_CARDS = 30;
 	static final int NB_PREPARATION_CARDS = 33;
 	static final int NB_BLANK_CARDS = 7;
