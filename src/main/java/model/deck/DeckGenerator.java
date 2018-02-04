@@ -13,7 +13,7 @@ public class DeckGenerator {
 	static final int NB_COPPER_CARDS = 60;
 	static final int NB_SILVER_CARDS = 40;
 	static final int NB_GOLD_CARDS = 30;
-	static final int NB_DOMAIN_CARDS = 24;
+	static final int NB_ESTATE_CARDS = 24;
 	static final int NB_DUCHY_CARDS = 12;
 	static final int NB_PROVINCE_CARDS = 12;
 	public static final int NB_REALM_CARDS = 10;
@@ -73,10 +73,10 @@ public class DeckGenerator {
 		return cards;
 	}
 
-	public static Set<VictoryCard> generateDomainCards() {
+	public static Set<VictoryCard> generateEstateCards() {
 		Set<VictoryCard> cards = new HashSet<>();
-		for (int i = 0; i < NB_DOMAIN_CARDS; i++) {
-			cards.add(new VictoryCard(VictoryValue.DOMAIN));
+		for (int i = 0; i < NB_ESTATE_CARDS; i++) {
+			cards.add(new VictoryCard(VictoryValue.ESTATE));
 		}
 		return cards;
 	}

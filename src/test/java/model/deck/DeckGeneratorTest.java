@@ -40,8 +40,8 @@ public class DeckGeneratorTest {
 	}
 
 	@Test
-	public void generateDomainCardsTest() {
-		assertEquals(DeckGenerator.NB_DOMAIN_CARDS, DeckGenerator.generateDomainCards().size());
+	public void generateEstateCardsTest() {
+		assertEquals(DeckGenerator.NB_ESTATE_CARDS, DeckGenerator.generateEstateCards().size());
 	}
 
 	@Test

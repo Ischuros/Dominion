@@ -11,7 +11,7 @@ public class Game {
 	private Set<TreasureCard> copperCards;
 	private Set<TreasureCard> silverCards;
 	private Set<TreasureCard> goldCards;
-	private Set<VictoryCard> domainCards;
+	private Set<VictoryCard> estateCards;
 	private Set<VictoryCard> duchyCards;
 	private Set<VictoryCard> provinceCards;
 	private KingdomCardManager kingdomCardManager;
@@ -20,7 +20,7 @@ public class Game {
 		this.copperCards = DeckGenerator.generateCopperCards();
 		this.silverCards = DeckGenerator.generateSilverCards();
 		this.goldCards = DeckGenerator.generateGoldCards();
-		this.domainCards = DeckGenerator.generateDomainCards();
+		this.estateCards = DeckGenerator.generateEstateCards();
 		this.duchyCards = DeckGenerator.generateDuchyCards();
 		this.provinceCards = DeckGenerator.generateProvinceCards();
 		this.kingdomCardManager = new KingdomCardManager();
